@@ -24,9 +24,9 @@ class Plugin {
     }
 
     public function asynchrone_posts() {
-//        require_once(PLUGIN_VIEWS . "posts-list.php");
-        echo "étest";
-        return 1;
+        ob_start();
+        require_once(PLUGIN_VIEWS . "posts-list.php");
+        return ob_get_clean();
     }
 
     public function add_front_back_office() {
