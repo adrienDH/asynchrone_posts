@@ -6,7 +6,7 @@
 <div class="thumbnail-post-wrapper">
     <a href="<?php get_permalink(get_the_ID()) ?>" title="<?php get_the_title() ?>" class="thumbnail-post">
         <?php if(!empty($urlPicture)): ?>
-            <div class="img" style="background-image: url('<?php echo $urlPicture ?>')"></div>
+            <div class="img" style="background-image: url('<?php $urlPicture ?>')"></div>
         <?php endif; ?>
         <div class="content-post">
             <div class="title-post"><?php get_the_title() ?></div>
