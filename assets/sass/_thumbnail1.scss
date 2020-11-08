@@ -1,0 +1,41 @@
+.thumbnail-post-wrapper {
+  width: 33%;
+  padding: 0 15px;
+  display: inline-block !important;
+  vertical-align: top;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  .thumbnail-post {
+    display: block;
+    position: relative;
+    box-shadow: 4px 4px 10px 1px #BCBABA;
+    margin-bottom: 20px;
+    max-height: 340px;
+
+    .img {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 135px;
+      width: 100%;
+    }
+
+    .title-post {
+      @include font($blue, 21px, bold);
+      line-height: 24px;
+    }
+
+    .content-post {
+      padding: 20px;
+
+      .categories {
+        color: $red;
+        @include font($red, 15px, bold);
+        line-height: 21px;
+      }
+    }
+  }
+}

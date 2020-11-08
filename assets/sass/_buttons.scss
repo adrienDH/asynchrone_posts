@@ -1,0 +1,18 @@
+.button-more-post-wrapper {
+  text-align: center;
+
+  .more-post {
+    background: $blue;
+    box-shadow: none;
+    border: 1px solid $blue;
+    cursor: pointer;
+    padding: 15px 35px;
+    @include font($white, 21px, bold);
+    @include transition(all .3s ease-in-out);
+
+    &:hover {
+      background: $white;
+      color: $blue;
+    }
+  }
+}
