@@ -19,8 +19,8 @@
 <div class="button-more-post-wrapper">
     <button
         class="ajax-more-post more-post"
-        data-ajax-url="<?php echo admin_url('admin-ajax.php') ?>"
-        data-post-not-in="<?php echo json_encode($postIn) ?>"
+        data-ajax-url="<?php admin_url('admin-ajax.php') ?>"
+        data-post-not-in="<?php json_encode($postIn) ?>"
     >
         VOIR PLUS
     </button>
