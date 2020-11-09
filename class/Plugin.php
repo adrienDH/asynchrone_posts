@@ -4,7 +4,7 @@ namespace Dhermy;
 
 class Plugin {
     public function __construct() {
-        add_action('admin_menu', array($this, 'asynchrone_posts_menu'));
+//        add_action('admin_menu', array($this, 'asynchrone_posts_menu'));
         add_shortcode('asynchrone_posts', array($this, "asynchrone_posts"));
         $this->addScripts();
         $this->addCss();
